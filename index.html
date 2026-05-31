@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Rooms | Elevate Your Collaboration</title>
+    <meta name="description" content="Buy futuristic visual rooms for your team to collaborate and transfer data seamlessly.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body class="light-mode">
+    <nav class="navbar">
+        <div class="logo">
+            <h2 class="js-nav-link" data-target="page-home" style="cursor: pointer;">V-Rooms<span>.</span></h2>
+        </div>
+        <div class="nav-controls">
+            <button class="js-dark-toggle btn-icon" aria-label="Toggle Dark Mode">
+                <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" /></svg>
+                <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="display: none;"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+            </button>
+            <div class="cart-container js-nav-link" data-target="page-cart" style="cursor: pointer;">
+                <svg class="icon-cart" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                <span class="js-cart-count cart-badge">0</span>
+            </div>
+            <button class="js-menu-toggle btn-hamburger" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <aside class="js-sidebar sidebar">
+        <ul class="sidebar-links">
+            <li><a href="#" class="js-nav-link" data-target="page-home">Home</a></li>
+            <li><a href="#" class="js-nav-link" data-target="page-catalog">Rooms Catalog</a></li>
+            <li><a href="#" class="js-nav-link" data-target="page-team">My Team</a></li>
+            <li><a href="#" class="js-nav-link" data-target="page-settings">Settings</a></li>
+        </ul>
+    </aside>
+    <div class="js-sidebar-overlay sidebar-overlay"></div>
+
+    <main class="container">
+        <!-- PAGE 1: HOME -->
+        <section id="page-home" class="page-section is-active">
+            <div class="hero">
+                <h1>Immersive <span class="highlight">Visual Rooms</span></h1>
+                <p>Empower your team with interactive environments. Share data, collaborate in real-time, and break the limits of distance.</p>
+                <button class="btn-primary js-nav-link mt-2" data-target="page-catalog" style="margin-top: 2rem; font-size: 1.2rem;">Browse Rooms</button>
+            </div>
+        </section>
+
+        <!-- PAGE 2: CATALOG -->
+        <section id="page-catalog" class="page-section">
+            <h2 class="section-title">Rooms Catalog</h2>
+            <div class="grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="card-img-wrapper">
+                        <img src="assets/images/room1.png" alt="Neon Holographic Room">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Neon Nexus</h3>
+                            <div class="room-rating">
+                                <button class="js-rate-btn btn-counter-small" data-room="1" data-action="minus">-</button>
+                                <span class="js-rating-display display-number-small" id="rating-1">0</span>
+                                <button class="js-rate-btn btn-counter-small" data-room="1" data-action="plus">+</button>
+                                <span class="rating-label">⭐</span>
+                            </div>
+                        </div>
+                        <p>Perfect for brainstorming and data visualization with immersive neon themes.</p>
+                        
+                        <div class="booking-controls">
+                            <label for="hours-1">Hours needed:</label>
+                            <input type="number" id="hours-1" class="js-hours-input hours-input" min="1" value="1">
+                        </div>
+
+                        <div class="card-footer">
+                            <span class="price">$15 <small>/hr</small></span>
+                            <button class="js-add-to-cart btn-primary" data-id="1" data-name="Neon Nexus" data-price="15">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="card-img-wrapper">
+                        <img src="assets/images/room2.png" alt="Zen Minimalist Room">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Zen Space</h3>
+                            <div class="room-rating">
+                                <button class="js-rate-btn btn-counter-small" data-room="2" data-action="minus">-</button>
+                                <span class="js-rating-display display-number-small" id="rating-2">0</span>
+                                <button class="js-rate-btn btn-counter-small" data-room="2" data-action="plus">+</button>
+                                <span class="rating-label">⭐</span>
+                            </div>
+                        </div>
+                        <p>A calm environment optimized for deep work, one-on-ones, and focused meetings.</p>
+                        
+                        <div class="booking-controls">
+                            <label for="hours-2">Hours needed:</label>
+                            <input type="number" id="hours-2" class="js-hours-input hours-input" min="1" value="1">
+                        </div>
+
+                        <div class="card-footer">
+                            <span class="price">$10 <small>/hr</small></span>
+                            <button class="js-add-to-cart btn-primary" data-id="2" data-name="Zen Space" data-price="10">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Command Center Room">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Command Center</h3>
+                            <div class="room-rating">
+                                <button class="js-rate-btn btn-counter-small" data-room="3" data-action="minus">-</button>
+                                <span class="js-rating-display display-number-small" id="rating-3">0</span>
+                                <button class="js-rate-btn btn-counter-small" data-room="3" data-action="plus">+</button>
+                                <span class="rating-label">⭐</span>
+                            </div>
+                        </div>
+                        <p>High-tech room designed for crisis management, war-rooms, and system monitoring.</p>
+                        
+                        <div class="booking-controls">
+                            <label for="hours-3">Hours needed:</label>
+                            <input type="number" id="hours-3" class="js-hours-input hours-input" min="1" value="1">
+                        </div>
+
+                        <div class="card-footer">
+                            <span class="price">$25 <small>/hr</small></span>
+                            <button class="js-add-to-cart btn-primary" data-id="3" data-name="Command Center" data-price="25">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 3: CART & CHECKOUT -->
+        <section id="page-cart" class="page-section">
+            <h2 class="section-title">Your Booking Cart</h2>
+            <div class="cart-layout">
+                <div class="js-cart-content cart-items-list">
+                    <!-- Dynamic Cart Items Injected Here -->
+                    <div class="empty-cart-msg">Your cart is empty. <br><br> <button class="btn-primary js-nav-link" data-target="page-catalog">Browse Rooms</button></div>
+                </div>
+                
+                <div class="cart-summary">
+                    <h3>Order Summary</h3>
+                    <div class="summary-row">
+                        <span>Total Hours:</span>
+                        <span class="js-total-hours">0</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Total Price:</span>
+                        <span>$<span class="js-cart-total">0</span></span>
+                    </div>
+                    <button class="js-checkout-btn btn-primary btn-block">Checkout & Pay</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 4: MY TEAM -->
+        <section id="page-team" class="page-section">
+            <h2 class="section-title">My Team</h2>
+            <div class="team-container">
+                <div class="team-header">
+                    <p>Invite your team members to collaborate in your booked rooms.</p>
+                    <button class="btn-primary">Invite Member</button>
+                </div>
+                <div class="team-list">
+                    <div class="team-member">
+                        <div class="avatar">MA</div>
+                        <div>
+                            <h4>Mohamed Admin</h4>
+                            <p class="text-muted">Admin</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 5: SETTINGS -->
+        <section id="page-settings" class="page-section">
+            <h2 class="section-title">Settings</h2>
+            <div class="settings-container">
+                <div class="settings-card">
+                    <h3>App Preferences</h3>
+                    <p>Control your overall experience.</p>
+                    <br>
+                    <button class="btn-primary js-dark-toggle-alt">Toggle Dark Mode</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for Checkout Success -->
+    <div class="js-success-modal success-modal">
+        <div class="modal-content">
+            <h2 style="font-size: 3rem; margin-bottom: 1rem;">🎉</h2>
+            <h2>Payment Successful!</h2>
+            <p>Your visual rooms have been booked. Your team can now start collaborating.</p>
+            <button class="btn-primary js-close-modal" style="margin-top: 1.5rem;">Go to Home</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
